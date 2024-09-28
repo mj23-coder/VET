@@ -1,0 +1,84 @@
+@media (min-width: 699px) and (max-width: 976px){
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 5vh;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    .nav-list.show{
+        display: flex ;
+    }
+    .nav{
+        height: 10vh;
+        width: 100%;
+        background-color: #c6e3b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-pic {
+        height: auto;
+        max-height: 10vh;
+        display: flex;
+        justify-content: start;
+    }
+    .nav-list {
+        display: none; /* Hide the nav items by default */
+        flex-direction: column; /* Stack vertically when shown */
+        align-items: center;
+        position: absolute; /* Show on top */
+        background-color: #c6e3b2; 
+        top: 8vh;
+        width: 100%; /* Full width of the screen */
+        gap: 25px; /* Adjust gap for mobile */
+        padding: 20px;
+    }
+    .nav-list li a {
+        font-size: 25px; /* Adjust font size for mobile */
+        padding: 5px 10px;
+    }
+    .bookB {
+        font-size: 14px; /* Adjust button size for mobile */
+    }
+    .section {
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        background-color: #ffffff;
+        scroll-margin-top: 10vh; /* Space for fixed navigation bar */
+    }
+    .home{
+        background-color: antiquewhite;
+    }
+    .text-container h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+      
+      .text-container p {
+        font-size: 20px;
+        color: #555;
+    }
+    .aboutus{
+        background-color: aquamarine;
+    }
+    .services{
+        background-color: azure;
+    }
+    .loccon{
+        background-color: blue;
+    }
+    .book{
+        background-color: bisque;
+    }
+    
+
+
+}
