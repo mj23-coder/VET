@@ -87,8 +87,6 @@
         background-color: bisque;
     }
     
-
-
 }
 @media (max-width: 360px){
     body {
@@ -179,6 +177,5 @@
     .book{
         background-color: bisque;
     }
-    
 
 }

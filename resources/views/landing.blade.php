@@ -79,7 +79,14 @@
                 </div>
             </div>
         </section>
-        <section class="section aboutus" id="aboutus"></section>
+        <section class="section aboutus" id="aboutus">
+            <div class="about-container">
+
+            </div>
+            <div class="announcement-container">
+
+            </div>
+        </section>
         <section class="section services" id="services"></section>
         <section class="section loccon" id="loccon"></section>
     </body>

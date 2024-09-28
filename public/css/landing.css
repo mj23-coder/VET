@@ -1,65 +1,65 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .nav {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    height: 11vh;
-    background-color: #c6e3b2;
-    width: 100%;
-    z-index: 999;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  height: 11vh;
+  background-color: #c6e3b2;
+  width: 100%;
+  z-index: 999;
 }
 .nav-pic {
-    height: auto;
-    max-height: 10vh;
-    display: flex;
-    justify-content: start;
+  height: auto;
+  max-height: 10vh;
+  display: flex;
+  justify-content: start;
 }
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 40px;
-    padding-right: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 40px;
+  padding-right: 10px;
 }
 .nav-list li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'MadimiOne', sans-serif;
-    text-wrap: wrap;
-    font-size: 24px;
-    padding: 10px 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'MadimiOne', sans-serif;
+  text-wrap: wrap;
+  font-size: 24px;
+  padding: 10px 15px;
 }
 .nav-list li a:hover {
     color: #f9f7de; /* Hover effect */
 }
 .bookB {
-    background: #f9f7de;
-    padding: 10px 20px;
-    border-radius: 30px; /* Oblong shape */
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
+  background: #f9f7de;
+  padding: 10px 20px;
+  border-radius: 30px; /* Oblong shape */
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .bookB:hover {
-    color: black !important; /* Optional color change */
-    box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
-    transform: scale(1.05); /* Slightly scale up on hover */
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  color: black !important; /* Optional color change */
+  box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 #marker {
-    position: absolute;
-    bottom: 0; /* Ensure marker stays at the bottom of the links */
-    height: 5px;
-    background-color: #029f02;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-    z-index: 1;
-    left: 0; /* Default position for marker */
+  position: absolute;
+  bottom: 0; /* Ensure marker stays at the bottom of the links */
+  height: 5px;
+  background-color: #029f02;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  z-index: 1;
+  left: 0; /* Default position for marker */
 }
 @media (max-width:1250px) {
   .nav-list {
@@ -70,29 +70,29 @@ body {
     padding-right: 5px;
   }
   .nav-list li a {
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-family: 'MadimiOne', sans-serif;
-      text-wrap: wrap;
-      font-size: 20px;
-      padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'MadimiOne', sans-serif;
+    text-wrap: wrap;
+    font-size: 20px;
+    padding: 5px 10px;
   }
   .nav-list li a:hover {
-      color: #f9f7de; /* Hover effect */
+    color: #f9f7de; /* Hover effect */
   }
   .bookB {
-      background: #f9f7de;
-      padding: 5px 15px;
-      border-radius: 30px; /* Oblong shape */
-      font-size: 16px;
-      text-transform: uppercase;
-      text-decoration: none;
+    background: #f9f7de;
+    padding: 5px 15px;
+    border-radius: 30px; /* Oblong shape */
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
   }
   .bookB:hover {
-      color: black !important; /* Optional color change */
-      box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
-      transform: scale(1.05); /* Slightly scale up on hover */
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    color: black !important; /* Optional color change */
+    box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
   }
 }
 /* Hamburger Menu */
@@ -125,211 +125,211 @@ body {
 }
 /* Flexbox container to hold images and text side by side */
 .flex-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-    width: 80vw;
-    padding-top: 8vh;
-  }
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  padding-top: 8vh;
+}
   
   /* Adjust the width of the picContainer */
+.picContainer {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 5px solid #262626;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0px 50px 100px #262626;
+}
+  
+  /* Text container beside the images */
+.text-container {
+  width: 60%; /* Adjust width as necessary */
+  padding-left: 6vw;
+  text-align: center;
+}
+  
+.text-container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #333;
+}
+  
+.text-container p {
+  font-size: 28px;
+  color: #555;
+}
+  @media (max-width: 1350px) { 
+    /* Flexbox container to hold images and text */
+  .flex-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Adjust as needed */
+    width: 90vw;
+    padding-top: 11vh;
+  }
+  
+    /* Adjust the width of the picContainer */
   .picContainer {
     position: relative;
-    width: 600px;
-    height: 550px;
+    width: 400px;
+    height: 500px;
     border: 5px solid #262626;
     background: black;
     border-radius: 10px;
-    box-shadow: 0px 50px 100px #262626;
+    box-shadow: 0px 0px 0px #262626;
   }
   
-  /* Text container beside the images */
+    /* Text container below the images */
   .text-container {
-    width: 60%; /* Adjust width as necessary */
-    padding-left: 6vw;
-    text-align: center;
+    width:80%; /* Adjust width as necessary */
+    text-align: center; /* Center-align text */
+    transition: 1s  ;
   }
   
   .text-container h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
     color: #333;
-  }
+ }
   
   .text-container p {
-    font-size: 28px;
+    font-size: 24px;
     color: #555;
+    max-width: 100%; /* Adjusted for better fitting */
   }
-  @media (max-width: 1350px) {
-    
-    /* Flexbox container to hold images and text */
-    .flex-container {
-      display: flex;
-      flex-direction: column; /* Stack vertically */
-      align-items: center;
-      justify-content: center;
-      height: 80vh; /* Adjust as needed */
-      width: 90vw;
-      padding-top: 11vh;
-    }
-  
-    /* Adjust the width of the picContainer */
-    .picContainer {
-      position: relative;
-      width: 400px;
-      height: 500px;
-      border: 5px solid #262626;
-      background: black;
-      border-radius: 10px;
-      box-shadow: 0px 0px 0px #262626;
-    }
-  
-    /* Text container below the images */
-    .text-container {
-      width:80%; /* Adjust width as necessary */
-      text-align: center; /* Center-align text */
-      transition: 1s  ;
-    }
-  
-    .text-container h1 {
-      font-size: 35px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-  
-    .text-container p {
-      font-size: 24px;
-      color: #555;
-      max-width: 100%; /* Adjusted for better fitting */
-    }
-  }
+}
   
   
   /* Image styling remains the same */
-  .flex-container img {
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-  }
+.flex-container img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
   
-  .img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-    transition: 1s;
-  }
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  transition: 1s;
+}
   
   /* Navigation buttons (left and right) */
-  .right {
-    position: absolute;
-    height: 100%;
-    width: 60px;
-    z-index: 99;
-    cursor: pointer;
-    color: #fff;
-    transition: 1s;
-    right: 0;
-    top: 0;
-  }
+.right {
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+  right: 0;
+  top: 0;
+}
   
-  .right:hover {
-    background: rgba(0, 0, 0, 0.25);
-  }
+.right:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
   
-  .right:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    font-size: 50px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%) scale(0.75);
-    margin-right: 10px;
-    transition: 0.5s;
-  }
+.right:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.75);
+  margin-right: 10px;
+  transition: 0.5s;
+}
   
-  .right:hover:before {
-    transform: translateY(-50%) scale(1);
-  }
+.right:hover:before {
+  transform: translateY(-50%) scale(1);
+}
   
-  .left {
-    position: relative;
-    height: 100%;
-    width: 60px;
-    z-index: 99;
-    cursor: pointer;
-    color: #fff;
-    transition: 1s;
-  }
+.left {
+  position: relative;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+}
   
-  .left:hover {
-    background: rgba(0, 0, 0, 0.25);
-  }
+.left:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
   
-  .left:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f104";
-    font-size: 50px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) scale(0.75);
-    margin-left: 10px;
-    transition: 0.5s;
-  }
+.left:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f104";
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.75);
+  margin-left: 10px;
+  transition: 0.5s;
+}
   
-  .left:hover:before {
-    transform: translateY(-50%) scale(1);
-  }
+.left:hover:before {
+  transform: translateY(-50%) scale(1);
+}
   
   /* Dots for image navigation */
-  .dot {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    z-index: 99;
-    background: #333;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 0px 0px 5px #fff;
-  }
+.dot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 0px 5px #fff;
+}
   
-  .dot.a1 { margin-left: -70px; }
-  .dot.a2 { margin-left: -50px; }
-  .dot.a3 { margin-left: -30px; }
-  .dot.a4 { margin-left: -10px; }
-  .dot.a5 { margin-left: 10px; }
-  .dot.a6 { margin-left: 30px; }
-  .dot.a7 { margin-left: 50px; }
-  .dot.a8 { margin-left: 70px; }
-  .dot.a9 { margin-left: 90px; }
+.dot.a1 { margin-left: -70px; }
+.dot.a2 { margin-left: -50px; }
+.dot.a3 { margin-left: -30px; }
+.dot.a4 { margin-left: -10px; }
+.dot.a5 { margin-left: 10px; }
+.dot.a6 { margin-left: 30px; }
+.dot.a7 { margin-left: 50px; }
+.dot.a8 { margin-left: 70px; }
+.dot.a9 { margin-left: 90px; }
   
-  .dot.a1:hover { background: #fff; }
-  .dot.a2:hover { background: #fff; }
-  .dot.a3:hover { background: #fff; }
-  .dot.a4:hover { background: #fff; }
-  .dot.a5:hover { background: #fff; }
-  .dot.a6:hover { background: #fff; }
-  .dot.a7:hover { background: #fff; }
-  .dot.a8:hover { background: #fff; }
-  .dot.a9:hover { background: #fff; }
+.dot.a1:hover { background: #fff; }
+.dot.a2:hover { background: #fff; }
+.dot.a3:hover { background: #fff; }
+.dot.a4:hover { background: #fff; }
+.dot.a5:hover { background: #fff; }
+.dot.a6:hover { background: #fff; }
+.dot.a7:hover { background: #fff; }
+.dot.a8:hover { background: #fff; }
+.dot.a9:hover { background: #fff; }
   
-  #info {
-    position: absolute;
-    top: -65px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(0, 0, 0, 0.75);
-  }
+#info {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.75);
+}
+
 .aboutus{
     background-color: aquamarine;
 }
