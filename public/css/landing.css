@@ -26,21 +26,12 @@ body {
     gap: 40px;
     padding-right: 10px;
 }
-@media (max-width:1035px) {
-    .nav-list {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap */
-        gap: 20px;
-        padding-right: 10px;
-    }
-}
 .nav-list li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'MadimiOne', sans-serif;
     text-wrap: wrap;
-    font-size: 22px;
+    font-size: 24px;
     padding: 10px 15px;
 }
 .nav-list li a:hover {
@@ -69,6 +60,40 @@ body {
     transition: all 0.5s ease;
     z-index: 1;
     left: 0; /* Default position for marker */
+}
+@media (max-width:1250px) {
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 10px;
+    padding-right: 5px;
+  }
+  .nav-list li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-family: 'MadimiOne', sans-serif;
+      text-wrap: wrap;
+      font-size: 20px;
+      padding: 5px 10px;
+  }
+  .nav-list li a:hover {
+      color: #f9f7de; /* Hover effect */
+  }
+  .bookB {
+      background: #f9f7de;
+      padding: 5px 15px;
+      border-radius: 30px; /* Oblong shape */
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+  .bookB:hover {
+      color: black !important; /* Optional color change */
+      box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
+      transform: scale(1.05); /* Slightly scale up on hover */
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
 }
 /* Hamburger Menu */
 .hamburger {
@@ -138,6 +163,7 @@ body {
     color: #555;
   }
   @media (max-width: 1350px) {
+    
     /* Flexbox container to hold images and text */
     .flex-container {
       display: flex;
@@ -164,7 +190,7 @@ body {
     .text-container {
       width:80%; /* Adjust width as necessary */
       text-align: center; /* Center-align text */
-      transition: 1s;
+      transition: 1s  ;
     }
   
     .text-container h1 {
