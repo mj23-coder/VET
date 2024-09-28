@@ -83,7 +83,8 @@
             <div class="about-container">
 
             </div>
-            <div class="announcement-container">
+            <div class="announce-container">
+                <h1>ANNOUNCEMENT!!!</h1>
 
             </div>
         </section>
