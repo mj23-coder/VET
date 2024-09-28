@@ -17,7 +17,7 @@ body {
 }
 
 .main {
-    width: 350px;
+    width: 400px;
     height: 500px;
     background: #FFE0B2; /* Slightly transparent red background */
     overflow: hidden;

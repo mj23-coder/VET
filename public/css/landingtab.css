@@ -34,7 +34,7 @@
         align-items: center;
         position: absolute; /* Show on top */
         background-color: #c6e3b2; 
-        top: 8vh;
+        top: 7vh;
         width: 100%; /* Full width of the screen */
         gap: 25px; /* Adjust gap for mobile */
         padding: 20px;
