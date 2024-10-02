@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 11vh;
-  background-color: #c6e3b2;
+  background-color: #97E2E1;
   width: 100%;
   z-index: 999;
 }
@@ -37,11 +37,11 @@ body {
 .nav-list li a:hover {
     color: #f9f7de; /* Hover effect */
 }
-.bookB {
+.bButton .bookB {
   background: #f9f7de;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 30px; /* Oblong shape */
-  font-size: 18px;
+  font-size: 26px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -61,40 +61,7 @@ body {
   z-index: 1;
   left: 0; /* Default position for marker */
 }
-@media (max-width:1250px) {
-  .nav-list {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 10px;
-    padding-right: 5px;
-  }
-  .nav-list li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'MadimiOne', sans-serif;
-    text-wrap: wrap;
-    font-size: 20px;
-    padding: 5px 10px;
-  }
-  .nav-list li a:hover {
-    color: #f9f7de; /* Hover effect */
-  }
-  .bookB {
-    background: #f9f7de;
-    padding: 5px 15px;
-    border-radius: 30px; /* Oblong shape */
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  .bookB:hover {
-    color: black !important; /* Optional color change */
-    box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
-    transform: scale(1.05); /* Slightly scale up on hover */
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-  }
-}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -112,16 +79,16 @@ body {
     margin: 1px 0;
 }
 .section {
-    width: 100%;
+    width: 100vw;
     height: 100vh; /* Full viewport height */
     display: flex;
     background-color: #ffffff;
     scroll-margin-top: 11vh; /* Space for fixed navigation bar */
 }
 .home{
-    background-color: antiquewhite;
-    align-items: center;
-    justify-content: center;
+  background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  justify-content: center;
+  align-items: center;
 }
 /* Flexbox container to hold images and text side by side */
 .flex-container {
@@ -147,7 +114,7 @@ body {
   
   /* Text container beside the images */
 .text-container {
-  width: 60%; /* Adjust width as necessary */
+  width: 50vw; /* Adjust width as necessary */
   padding-left: 6vw;
   text-align: center;
 }
@@ -162,49 +129,6 @@ body {
   font-size: 28px;
   color: #555;
 }
-  @media (max-width: 1350px) { 
-    /* Flexbox container to hold images and text */
-  .flex-container {
-    display: flex;
-    flex-direction: column; /* Stack vertically */
-    align-items: center;
-    justify-content: center;
-    height: 80vh; /* Adjust as needed */
-    width: 90vw;
-    padding-top: 11vh;
-  }
-  
-    /* Adjust the width of the picContainer */
-  .picContainer {
-    position: relative;
-    width: 400px;
-    height: 500px;
-    border: 5px solid #262626;
-    background: black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 0px #262626;
-  }
-  
-    /* Text container below the images */
-  .text-container {
-    width:80%; /* Adjust width as necessary */
-    text-align: center; /* Center-align text */
-    transition: 1s  ;
-  }
-  
-  .text-container h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    color: #333;
- }
-  
-  .text-container p {
-    font-size: 24px;
-    color: #555;
-    max-width: 100%; /* Adjusted for better fitting */
-  }
-}
-  
   
   /* Image styling remains the same */
 .flex-container img {
@@ -332,21 +256,33 @@ body {
 
 .aboutus{
   padding: 0;
-  margin: 0;
-  background-color: aquamarine;
+  margin: 0; 
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   justify-content: center;
   align-items: center;
 }
 .about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
-  width: 100%;
-  background-color: red;
+  width: 50%;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.about-container p{
+  margin-top: -2vh;
+  max-width: 70%;
+  font-size: 2vw;
 }
 .announce-container{
   height: 100%;
-  width: 100%;
-  background-color: rgb(140, 140, 173);
+  width: 50%;
   text-align: center;
+  font-size: 3vw;
 }
 
 
@@ -358,4 +294,140 @@ body {
 }
 .book{
   background-color: bisque;
+}
+
+@media (max-width: 1350px) { 
+  /* Flexbox container to hold images and text */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Adjust as needed */
+  width: 90vw;
+  padding-top: 11vh;
+}
+
+  /* Adjust the width of the picContainer */
+.picContainer {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 5px solid #262626;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #262626;
+}
+
+  /* Text container below the images */
+.text-container {
+  width:80vw; /* Adjust width as necessary */
+  text-align: center; /* Center-align text */
+  transition: 1s  ;
+}
+
+.text-container h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 24px;
+  color: #555;
+  max-width: 100%; /* Adjusted for better fitting */
+}
+.aboutus{
+  padding: 0;
+  margin: 0; 
+  background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  justify-content: center;
+  align-items: center;
+}
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width:50%;
+  text-align: center;
+  font-size: 3.2vw;
+}
+
+.about-container p{
+  max-width: 70%;
+  font-size: 2.4vw;
+}
+.announce-container{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  font-size: 3.2vw;
+}
+}
+@media (max-width:1267px) {
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 10px;
+    padding-right: 5px;
+  }
+  .nav-list li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'MadimiOne', sans-serif;
+    text-wrap: wrap;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .nav-list li a:hover {
+    color: #f9f7de; /* Hover effect */
+  }
+  .bButton .bookB {
+    background: #f9f7de;
+    padding: 10px 15px;
+    border-radius: 30px; /* Oblong shape */
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .bookB:hover {
+    color: black !important; /* Optional color change */
+    box-shadow: 0 0 10px 2px #029f02; /* Glowing effect */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+}
+@media (max-width:1150px) {
+  .aboutus{
+    padding: 0;
+    margin: 0; 
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+  }
+  
+  .about-container p{
+    max-width: 70%;
+    font-size: 2vw;
+  }
+  .announce-container{
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+  }
 }

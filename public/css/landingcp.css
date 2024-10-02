@@ -17,7 +17,7 @@
     .nav{
         height: 10vh;
         width: 100%;
-        background-color: #c6e3b2;
+        background-color: #97E2E1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -33,7 +33,7 @@
         flex-direction: column; /* Stack vertically when shown */
         align-items: center;
         position: absolute; /* Show on top */
-        background-color: #c6e3b2; 
+        background-color: #97E2E1; 
         top: 7vh;
         width: 100%; /* Full width of the screen */
         gap: 25px; /* Adjust gap for mobile */
@@ -75,8 +75,35 @@
         color: #555;
     }
     .aboutus{
-        background-color: aquamarine;
-    }
+        padding: 0;
+        margin: 0; 
+        height: 100vh;
+        width: 100vw;
+        background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 35%;
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+      }
+      
+      .about-container p{
+        max-width: 70%;
+        font-size: 3vw;
+      }
+      .announce-container{
+        height: 65%;
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+      }
     .services{
         background-color: azure;
     }
@@ -107,7 +134,7 @@
     .nav{
         height: 8vh;
         width: 100%;
-        background-color: #c6e3b2;
+        background-color: #97E2E1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -122,8 +149,8 @@
         display: none; /* Hide the nav items by default */
         flex-direction: column; /* Stack vertically when shown */
         align-items: center;
+        background-color: #97E2E1;
         position: absolute; /* Show on top */
-        background-color: #c6e3b2; 
         top: 5vh;
         width: 100%; /* Full width of the screen */
         gap: 25px; /* Adjust gap for mobile */
@@ -166,8 +193,35 @@
         color: #555;
     }
     .aboutus{
-        background-color: aquamarine;
-    }
+        padding: 0;
+        margin: 0; 
+        height: 100vh;
+        width: 100vw;
+        background: radial-gradient(62.68% 62.68% at 50% 50%, #A6F8F6 10%, rgba(116, 204, 202, 0.698039) 44%, rgba(82, 154, 153, 0.84902) 73%, #179896 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 35%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+      }
+      
+      .about-container p{
+        max-width: 70%;
+        font-size: 2vw;
+      }
+      .announce-container{
+        height: 65%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+      }
     .services{
         background-color: azure;
     }

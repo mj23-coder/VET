@@ -25,7 +25,9 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#loccon">Location/Contact</a></li>
                 <li><a href="/booking">Book-Now</a></li>
-                <li><a href="/register" class="bookB">Register</a></li>
+                <div class="bButton">
+                    <li><a href="/register" class="bookB">Register</a></li>
+                </div>
             </ul>
         </container>
         <section class="section home" id="home">
@@ -81,11 +83,13 @@
         </section>
         <section class="section aboutus" id="aboutus">
             <div class="about-container">
-
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates minima perspiciatis enim voluptatum vel unde a. Maiores facere eum velit asperiores suscipit. Repudiandae quaerat rerum eum, at nemo non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates minima perspiciatis enim voluptatum vel unde a. Maiores facere eum velit asperiores suscipit. Repudiandae quaerat rerum eum, at nemo non?
+                </p>
             </div>
             <div class="announce-container">
-                <h1>ANNOUNCEMENT!!!</h1>
-
+                <h1>ANNOUNCEMENT!!!</h1>    
             </div>
         </section>
         <section class="section services" id="services"></section>
